@@ -1,12 +1,12 @@
 # push_swap
 
 `push_swap` is a program that sorts a list of integers using two stacks and a limited set of operations.  
-The objective is to sort the numbers in the fewest possible moves and output the operations to `stdout`.
+The objective is to sort the numbers and optimize de move count that outputs to `stdout`.
 
 ## Installation and Usage
 
-To install Push Swap download the program and use the command 'cd' to move to the push_swap folder.
-Run `make` to compile all the files and execute `./push_swap $ARG` with $ARG being the numbers to be sorted.
+To use push_swap clone the git repository and 'cd' into the push_swap folder.
+Run `make` to compile all the files and execute `./push_swap`.
 
 exemple:
 
@@ -28,7 +28,7 @@ pa
 pa
 ```
 
-In adition to this, 42 has provided a `checker_OS` to test and validate the project, it works by having the moves from push_swap pipped to itself and the same argument as push_swap, if it sorts correctly then it prints `OK` otherwise it prints `KO`.
+In adition to this, 42 has provided a `checker_OS` to test and validate the project, it works by having the moves from push_swap piped to itself and the same argument as push_swap, if it sorts correctly then it prints `OK` otherwise it prints `KO`.
 
 ```bash
 ./push_swap -12 45 2 8 5 | ./checker_OS -12 45 2 8 5
@@ -61,7 +61,7 @@ The program receives integers as arguments, stores them in **stack A**, and uses
 
 ## Input Handling
 
-When **push_swap** is ran, before it can do anything it needs to parse its arguments, so that no undesired elements enter the program, for that `ft_parser` is used split the arguments, if needed, and to transform them with `ft_atol` from `char *` (string) to `int`, futhermore the program checks if the arguments are only consisting of **integers**, being those integers in the limits of `INT_MIN` to `INT_MAX` and if there are no duplicate numbers.
+When **push_swap** is run, before it can do anything it needs to parse its arguments, so that no undesired elements enter the program, for that `ft_parser` is used split the arguments, if needed, and to transform them with `ft_atol` from `char *` (string) to `int`, furthermore the program checks if the arguments are only consisting of **integers**, being those integers in the limits of `INT_MIN` to `INT_MAX` and if there are no duplicate numbers.
 
 ```c
 tmp = ft_atol(nums[j]);
@@ -73,7 +73,7 @@ if (!ft_check_num(nums[j]))
 	send_error();
 ```
 
-If any of these fail then the function `send_error` is called that prints to `stderr` "***Error***" and calls `exit` to stop the program.
+If any of these fail then the function `send_error` is called that prints "***Error***" to `stderr` and calls `exit` to stop the program.
 
 ```c
 void	send_error(void)
