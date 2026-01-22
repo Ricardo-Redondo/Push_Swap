@@ -1,7 +1,7 @@
 # push_swap
 
 `push_swap` is a program that sorts a list of integers using two stacks and a limited set of operations.  
-The objective is to sort the numbers and optimize de move count that outputs to `stdout`.
+The objective is to sort the numbers and optimize the move count that outputs to `stdout`.
 
 ## Installation and Usage
 
