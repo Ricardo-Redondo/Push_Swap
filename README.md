@@ -175,7 +175,7 @@ We move over one bit and repeat this process.
 a      b     |   a      b     |   a      b
 ```
 
-Our list is now sorted for the second digit. We repeat this process one last time for the last available digit.
+We repeat one last time for the last available digit.
 
 ```bash
 ⌄
@@ -190,7 +190,7 @@ Our list is now sorted for the second digit. We repeat this process one last tim
 a      b     |   a      b     |   a      b
 ```
 
-As you can see, the list is now completely sorted.
+The list is now completely sorted.
 
 But for **Radix** to know how many bits to go through (`max_bits`) it needs to find the max amount of bits needed to write the biggest index.
 - **7** -> `01111` -> needs 4 bits to write
