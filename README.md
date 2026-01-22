@@ -5,7 +5,7 @@ The objective is to sort the numbers and optimize de move count that outputs to 
 
 ## Installation and Usage
 
-To use push_swap clone the git repository and 'cd' into the push_swap folder.
+To use push_swap clone the git repository and `cd` into the push_swap folder.
 Run `make` to compile all the files and execute `./push_swap`.
 
 exemple:
