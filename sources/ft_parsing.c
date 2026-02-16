@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_parsing.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 21:52:27 by rsao-pay          #+#    #+#             */
-/*   Updated: 2026/01/20 16:21:13 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2026/02/16 14:02:27 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ void	ft_parser(int argc, char **argv)
 		while (nums[j])
 		{
 			tmp = ft_atol(nums[j]);
-			if (tmp < INT_MIN || tmp > INT_MAX)
+			if (tmp > INT_MAX)
 				send_error();
 			if (ft_double_check(nums))
 				send_error();
